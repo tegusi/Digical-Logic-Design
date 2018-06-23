@@ -1,1 +1,3 @@
 # Digical-Logic-Design
+
+北京大学数字逻辑设计课程lab——不过之后好像要改了……
