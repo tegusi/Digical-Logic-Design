@@ -1,0 +1,7 @@
+verilog work "led_mux.v"
+verilog work "led_decoder.v"
+verilog work "BIN_BCD.v"
+verilog work "BCD_BIN.v"
+verilog work "an_gen.v"
+verilog work "adder4.v"
+verilog work "main.vf"

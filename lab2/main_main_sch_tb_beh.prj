@@ -1,0 +1,8 @@
+verilog work "led_mux.v"
+verilog work "led_decoder.v"
+verilog work "BIN_BCD.v"
+verilog work "an_gen.v"
+verilog work "adder4.v"
+verilog work "main.vf"
+verilog work "test.v"
+verilog work "D:/Shuluo/14.7/ISE_DS/ISE//verilog/src/glbl.v"

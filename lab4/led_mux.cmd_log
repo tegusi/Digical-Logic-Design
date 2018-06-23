@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/led_mux.v -lang verilog -prj lab4 -o led_mux.spl -module led_mux -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e led_mux.spl C:/Users/tegusi/lab4/led_mux.sym 

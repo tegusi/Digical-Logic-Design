@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/tegusi/lab4/timer.xst" -ofn "C:/Users/tegusi/lab4/timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab4.ucf -p xc3s100e-cp132-5 timer.ngc timer.ngd  
+sch2sym -intstyle ise -family spartan3e -refsym timer C:/Users/tegusi/lab4/timer.sch C:/Users/tegusi/lab4/timer.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym timer C:/Users/tegusi/lab4/timer.sch C:/Users/tegusi/lab4/timer.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym timer C:/Users/tegusi/lab4/timer.sch C:/Users/tegusi/lab4/timer.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym timer C:/Users/tegusi/lab4/timer.sch C:/Users/tegusi/lab4/timer.sym 

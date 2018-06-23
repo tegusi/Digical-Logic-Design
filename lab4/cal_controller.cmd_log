@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/controller.v -lang verilog -prj lab4 -o cal_controller.spl -module cal_controller -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cal_controller.spl C:/Users/tegusi/lab4/cal_controller.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab4/controller.v -lang verilog -prj lab4 -o cal_controller.spl -module cal_controller -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cal_controller.spl C:/Users/tegusi/lab4/cal_controller.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab4/controller.v -lang verilog -prj lab4 -o cal_controller.spl -module cal_controller -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w cal_controller.spl C:/Users/tegusi/lab4/cal_controller.sym 

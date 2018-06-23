@@ -1,0 +1,7 @@
+MO BIN_BCD NULL BIN_BCD.v vlg45/_b_i_n___b_c_d.bin 1525611289
+MO led_mux NULL led_mux.v vlg22/led__mux.bin 1525611289
+MO led_decoder NULL led_decoder.v vlg7E/led__decoder.bin 1525611289
+MO main NULL main.vf vlg2D/main.bin 1525611289
+MO adder4 NULL adder4.v vlg58/adder4.bin 1525611289
+MO BCD_BIN NULL BCD_BIN.v vlg45/_b_c_d___b_i_n.bin 1525611289
+MO an_gen NULL an_gen.v vlg7C/an__gen.bin 1525611289

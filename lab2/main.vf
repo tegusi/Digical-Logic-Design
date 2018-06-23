@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 05/06/2018 20:46:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/tegusi/Documents/lab2/lab2/main.vf -w C:/Users/tegusi/Documents/lab2/lab2/main.sch
+//Design Name: main
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main(btn0, 
+            mclk, 
+            SW, 
+            an, 
+            dp, 
+            seg);
+
+    input btn0;
+    input mclk;
+    input [7:0] SW;
+   output [3:0] an;
+   output dp;
+   output [6:0] seg;
+   
+   wire [4:0] XLXN_3;
+   wire [7:0] XLXN_13;
+   wire [3:0] XLXN_14;
+   wire [3:0] XLXN_60;
+   wire [3:0] XLXN_62;
+   wire [3:0] an_DUMMY;
+   
+   assign an[3:0] = an_DUMMY[3:0];
+   BIN_BCD  XLXI_1 (.bin(XLXN_3[4:0]), 
+                   .bcd(XLXN_13[7:0]));
+   adder4  XLXI_3 (.a(XLXN_60[3:0]), 
+                  .b(XLXN_62[3:0]), 
+                  .sum(XLXN_3[4:0]));
+   an_gen  XLXI_4 (.btn0(btn0), 
+                  .mclk(mclk), 
+                  .an(an_DUMMY[3:0]));
+   led_mux  XLXI_7 (.an(an_DUMMY[3:0]), 
+                   .bcd(XLXN_13[7:0]), 
+                   .code(XLXN_14[3:0]));
+   led_decoder  XLXI_8 (.dec_in(XLXN_14[3:0]), 
+                       .dec_out(seg[6:0]), 
+                       .dp(dp));
+   BCD_BIN  XLXI_17 (.bcd(SW[7:4]), 
+                    .bin(XLXN_60[3:0]));
+   BCD_BIN  XLXI_38 (.bcd(SW[3:0]), 
+                    .bin(XLXN_62[3:0]));
+endmodule

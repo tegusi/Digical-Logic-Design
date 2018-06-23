@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/tegusi/Lab1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/tegusi/Lab1/xst"
+elaborate
+-ifn BCD2Binary.prj
+-ifmt mixed

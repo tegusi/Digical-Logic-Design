@@ -1,0 +1,7 @@
+verilog work "time_adv.v"
+verilog work "led_mux.v"
+verilog work "led_decoder.v"
+verilog work "counter163.vf"
+verilog work "button.v"
+verilog work "an_gen.v"
+verilog work "timer.vf"

@@ -1,0 +1,34 @@
+sch2sym -intstyle ise -family spartan3e -refsym lab0 C:/Users/tegusi/lab0/lab0.sch C:/Users/tegusi/lab0/lab0.sym 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab0_map.ncd lab0.ngd lab0.pcf 
+par -w -intstyle ise -ol high -t 1 lab0_map.ncd lab0.ncd lab0.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab0.twx lab0.ncd -o lab0.twr lab0.pcf 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab0_map.ncd lab0.ngd lab0.pcf 
+par -w -intstyle ise -ol high -t 1 lab0_map.ncd lab0.ncd lab0.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab0.twx lab0.ncd -o lab0.twr lab0.pcf 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab0_map.ncd lab0.ngd lab0.pcf 
+par -w -intstyle ise -ol high -t 1 lab0_map.ncd lab0.ncd lab0.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab0.twx lab0.ncd -o lab0.twr lab0.pcf 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab0_map.ncd lab0.ngd lab0.pcf 
+par -w -intstyle ise -ol high -t 1 lab0_map.ncd lab0.ncd lab0.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab0.twx lab0.ncd -o lab0.twr lab0.pcf 
+bitgen -intstyle ise -f lab0.ut lab0.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 lab0.ngc lab0.ngd  
+xst -intstyle ise -ifn "C:/Users/tegusi/lab0/lab0.xst" -ofn "C:/Users/tegusi/lab0/lab0.syr" 

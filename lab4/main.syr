@@ -1,0 +1,1173 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\tegusi\lab4\time_adv.v" into library work
+Parsing module <divide>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\mux_cal.v" into library work
+Parsing module <mux_cal>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\multi.v" into library work
+Parsing module <Multi>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\led_mux.v" into library work
+Parsing module <led_mux>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\counter163.vf" into library work
+Parsing module <M2_1E_MXILINX_counter163>.
+Parsing module <M4_1E_MXILINX_counter163>.
+Parsing module <M2_1_MXILINX_counter163>.
+Parsing module <counter163>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\controller.v" into library work
+Parsing module <cal_controller>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\button.v" into library work
+Parsing module <button>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\BIN_BCD.v" into library work
+Parsing module <BIN_BCD>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\BCD_BIN.v" into library work
+Parsing module <BCD_BIN>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\adder4.v" into library work
+Parsing module <Adder8>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\timer.vf" into library work
+Parsing module <M2_1E_MXILINX_timer>.
+Parsing module <M4_1E_MXILINX_timer>.
+Parsing module <M2_1_MXILINX_timer>.
+Parsing module <counter163_MUSER_timer>.
+Parsing module <timer>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\signal.v" into library work
+Parsing module <signal>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\mux_2.v" into library work
+Parsing module <mux_2>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\led_decoder.v" into library work
+Parsing module <led_decoder>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\calculator.vf" into library work
+Parsing module <calculator>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\an_gen.v" into library work
+Parsing module <an_gen>.
+Analyzing Verilog file "C:\Users\tegusi\lab4\main.vf" into library work
+Parsing module <calculator_MUSER_main>.
+Parsing module <M2_1E_MXILINX_main>.
+Parsing module <M4_1E_MXILINX_main>.
+Parsing module <M2_1_MXILINX_main>.
+Parsing module <counter163_MUSER_main>.
+Parsing module <timer_MUSER_main>.
+Parsing module <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main>.
+
+Elaborating module <an_gen>.
+WARNING:HDLCompiler:413 - "C:\Users\tegusi\lab4\an_gen.v" Line 25: Result of 18-bit expression is truncated to fit in 17-bit target.
+
+Elaborating module <led_decoder>.
+
+Elaborating module <mux_2>.
+
+Elaborating module <calculator_MUSER_main>.
+
+Elaborating module <cal_controller>.
+
+Elaborating module <BCD_BIN>.
+WARNING:HDLCompiler:413 - "C:\Users\tegusi\lab4\BCD_BIN.v" Line 27: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <Adder8>.
+WARNING:HDLCompiler:413 - "C:\Users\tegusi\lab4\adder4.v" Line 36: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <BIN_BCD>.
+
+Elaborating module <led_mux>.
+WARNING:HDLCompiler:91 - "C:\Users\tegusi\lab4\led_mux.v" Line 31: Signal <s1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\tegusi\lab4\led_mux.v" Line 32: Signal <s2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\tegusi\lab4\led_mux.v" Line 33: Signal <s3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\tegusi\lab4\led_mux.v" Line 34: Signal <s4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <mux_cal>.
+
+Elaborating module <Multi>.
+WARNING:HDLCompiler:413 - "C:\Users\tegusi\lab4\multi.v" Line 63: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <timer_MUSER_main>.
+
+Elaborating module <divide>.
+
+Elaborating module <GND>.
+
+Elaborating module <counter163_MUSER_main>.
+
+Elaborating module <FD(INIT=1'b0)>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <M4_1E_MXILINX_main>.
+
+Elaborating module <M2_1E_MXILINX_main>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND3B1>.
+
+Elaborating module <OR2>.
+
+Elaborating module <MUXF5>.
+
+Elaborating module <M2_1_MXILINX_main>.
+
+Elaborating module <AND2B1>.
+
+Elaborating module <AND2>.
+
+Elaborating module <AND4>.
+
+Elaborating module <INV>.
+
+Elaborating module <button>.
+
+Elaborating module <signal>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <an_gen>.
+    Related source file is "C:\Users\tegusi\lab4\an_gen.v".
+WARNING:Xst:647 - Input <btn0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <an>.
+    Found 17-bit register for signal <counter>.
+    Found 17-bit adder for signal <counter[16]_GND_2_o_add_1_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+Unit <an_gen> synthesized.
+
+Synthesizing Unit <led_decoder>.
+    Related source file is "C:\Users\tegusi\lab4\led_decoder.v".
+    Summary:
+	no macro.
+Unit <led_decoder> synthesized.
+
+Synthesizing Unit <mux_2>.
+    Related source file is "C:\Users\tegusi\lab4\mux_2.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_2> synthesized.
+
+Synthesizing Unit <calculator_MUSER_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Summary:
+	no macro.
+Unit <calculator_MUSER_main> synthesized.
+
+Synthesizing Unit <cal_controller>.
+    Related source file is "C:\Users\tegusi\lab4\controller.v".
+    Found 2-bit register for signal <state>.
+    Found 8-bit register for signal <x>.
+    Found 8-bit register for signal <y>.
+    Found 1-bit register for signal <add>.
+    Found 1-bit register for signal <multi>.
+    Found 1-bit register for signal <mode>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | mclk (rising_edge)                             |
+    | Reset              | GND_6_o_GND_6_o_equal_3_o (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cal_controller> synthesized.
+
+Synthesizing Unit <BCD_BIN>.
+    Related source file is "C:\Users\tegusi\lab4\BCD_BIN.v".
+    Found 8-bit adder for signal <bin> created at line 27.
+    Found 4x4-bit multiplier for signal <n0006> created at line 27.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <BCD_BIN> synthesized.
+
+Synthesizing Unit <Adder8>.
+    Related source file is "C:\Users\tegusi\lab4\adder4.v".
+    Summary:
+Unit <Adder8> synthesized.
+
+Synthesizing Unit <BIN_BCD>.
+    Related source file is "C:\Users\tegusi\lab4\BIN_BCD.v".
+    Found 4-bit adder for signal <n0461[3:0]> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_4_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_6_OUT> created at line 41.
+    Found 4-bit adder for signal <n0309> created at line 42.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_10_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_12_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_14_OUT> created at line 41.
+    Found 4-bit adder for signal <n0313> created at line 42.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_18_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_20_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_22_OUT> created at line 41.
+    Found 4-bit adder for signal <n0317> created at line 42.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_26_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_28_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_30_OUT> created at line 41.
+    Found 4-bit adder for signal <n0321> created at line 42.
+    Found 4-bit adder for signal <bi[12]_GND_10_o_add_34_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_36_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_38_OUT> created at line 41.
+    Found 4-bit adder for signal <n0325> created at line 42.
+    Found 4-bit adder for signal <bi[11]_GND_10_o_add_42_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_44_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_46_OUT> created at line 41.
+    Found 4-bit adder for signal <n0329> created at line 42.
+    Found 4-bit adder for signal <bi[10]_GND_10_o_add_50_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_52_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_54_OUT> created at line 41.
+    Found 4-bit adder for signal <n0333> created at line 42.
+    Found 4-bit adder for signal <bi[9]_GND_10_o_add_58_OUT> created at line 39.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_60_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_62_OUT> created at line 41.
+    Found 4-bit adder for signal <n0337> created at line 42.
+    Found 4-bit adder for signal <bi[8]_GND_10_o_add_66_OUT> created at line 39.
+    Found 4-bit adder for signal <bi[12]_GND_10_o_add_68_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_70_OUT> created at line 41.
+    Found 4-bit adder for signal <n0341> created at line 42.
+    Found 4-bit adder for signal <bi[7]_GND_10_o_add_74_OUT> created at line 39.
+    Found 4-bit adder for signal <bi[11]_GND_10_o_add_76_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_78_OUT> created at line 41.
+    Found 4-bit adder for signal <n0345> created at line 42.
+    Found 4-bit adder for signal <bi[6]_GND_10_o_add_82_OUT> created at line 39.
+    Found 4-bit adder for signal <bi[10]_GND_10_o_add_84_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_86_OUT> created at line 41.
+    Found 4-bit adder for signal <n0349> created at line 42.
+    Found 4-bit adder for signal <bi[5]_GND_10_o_add_90_OUT> created at line 39.
+    Found 4-bit adder for signal <bi[9]_GND_10_o_add_92_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_94_OUT> created at line 41.
+    Found 4-bit adder for signal <n0353> created at line 42.
+    Found 4-bit adder for signal <bi[4]_GND_10_o_add_98_OUT> created at line 39.
+    Found 4-bit adder for signal <bi[8]_GND_10_o_add_100_OUT> created at line 40.
+    Found 4-bit adder for signal <bi[12]_GND_10_o_add_102_OUT> created at line 41.
+    Found 4-bit adder for signal <n0357> created at line 42.
+    Found 3-bit comparator greater for signal <PWR_9_o_bi[15]_LessThan_1_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_4_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_6_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_8_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_10_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_12_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_14_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_16_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_18_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_20_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_22_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_24_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_26_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_28_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_30_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_32_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[12]_LessThan_34_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_36_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_38_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_40_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[11]_LessThan_42_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_44_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_46_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_48_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[10]_LessThan_50_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_52_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_54_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_56_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[9]_LessThan_58_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_60_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_62_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_64_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[8]_LessThan_66_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_bi[12]_LessThan_68_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_70_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_72_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[7]_LessThan_74_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_bi[11]_LessThan_76_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_78_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_80_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[6]_LessThan_82_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_bi[10]_LessThan_84_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_86_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_88_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[5]_LessThan_90_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_bi[9]_LessThan_92_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_94_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_96_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_10_o_bi[4]_LessThan_98_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_10_o_bi[8]_LessThan_100_o> created at line 40
+    Found 4-bit comparator greater for signal <GND_10_o_bi[12]_LessThan_102_o> created at line 41
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_104_o> created at line 42
+    Summary:
+	inferred  52 Adder/Subtractor(s).
+	inferred  52 Comparator(s).
+	inferred 192 Multiplexer(s).
+Unit <BIN_BCD> synthesized.
+
+Synthesizing Unit <led_mux>.
+    Related source file is "C:\Users\tegusi\lab4\led_mux.v".
+    Summary:
+	no macro.
+Unit <led_mux> synthesized.
+
+Synthesizing Unit <mux_cal>.
+    Related source file is "C:\Users\tegusi\lab4\mux_cal.v".
+WARNING:Xst:647 - Input <multi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_cal> synthesized.
+
+Synthesizing Unit <Multi>.
+    Related source file is "C:\Users\tegusi\lab4\multi.v".
+        idle = 0
+        add = 1
+        shift = 2
+    Found 3-bit register for signal <count>.
+    Found 16-bit register for signal <result>.
+    Found 2-bit register for signal <state>.
+    Found 16-bit register for signal <sum>.
+    Found 8-bit register for signal <y_tmp>.
+    Found 16-bit register for signal <mid>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <sum[15]_mid[15]_add_3_OUT> created at line 57.
+    Found 3-bit adder for signal <count[2]_GND_13_o_add_5_OUT> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_13_o_GND_13_o_equal_3_o> created at line 56.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Multi> synthesized.
+
+Synthesizing Unit <timer_MUSER_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+INFO:Xst:3210 - "C:\Users\tegusi\lab4\main.vf" line 398: Output port <RCD> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\tegusi\lab4\main.vf" line 423: Output port <RCD> of the instance <XLXI_150> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\tegusi\lab4\main.vf" line 451: Output port <RCD> of the instance <XLXI_165> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\tegusi\lab4\main.vf" line 479: Output port <RCD> of the instance <XLXI_171> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <timer_MUSER_main> synthesized.
+
+Synthesizing Unit <divide>.
+    Related source file is "C:\Users\tegusi\lab4\time_adv.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter[31]_GND_15_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <divide> synthesized.
+
+Synthesizing Unit <counter163_MUSER_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Set property "HU_SET = XLXI_13_2" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_27_3" for instance <XLXI_27>.
+    Set property "HU_SET = XLXI_28_4" for instance <XLXI_28>.
+    Set property "HU_SET = XLXI_34_5" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_43_6" for instance <XLXI_43>.
+    Set property "HU_SET = XLXI_47_7" for instance <XLXI_47>.
+    Set property "HU_SET = XLXI_71_9" for instance <XLXI_71>.
+    Set property "HU_SET = XLXI_75_8" for instance <XLXI_75>.
+    Summary:
+	no macro.
+Unit <counter163_MUSER_main> synthesized.
+
+Synthesizing Unit <M4_1E_MXILINX_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Set property "HU_SET = I_M01_1" for instance <I_M01>.
+    Set property "HU_SET = I_M23_0" for instance <I_M23>.
+    Summary:
+	no macro.
+Unit <M4_1E_MXILINX_main> synthesized.
+
+Synthesizing Unit <M2_1E_MXILINX_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Summary:
+	no macro.
+Unit <M2_1E_MXILINX_main> synthesized.
+
+Synthesizing Unit <M2_1_MXILINX_main>.
+    Related source file is "C:\Users\tegusi\lab4\main.vf".
+    Summary:
+	no macro.
+Unit <M2_1_MXILINX_main> synthesized.
+
+Synthesizing Unit <button>.
+    Related source file is "C:\Users\tegusi\lab4\button.v".
+WARNING:Xst:647 - Input <btn<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <rst>.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <sig>.
+    Found 1-bit register for signal <mode>.
+    Found 1-bit comparator equal for signal <n0003> created at line 49
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <button> synthesized.
+
+Synthesizing Unit <signal>.
+    Related source file is "C:\Users\tegusi\lab4\signal.v".
+    Found 1-bit register for signal <out1>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <signal> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 4x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 58
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 52
+ 8-bit adder                                           : 2
+# Registers                                            : 19
+ 1-bit register                                        : 9
+ 16-bit register                                       : 3
+ 17-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 53
+ 1-bit comparator equal                                : 1
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 51
+# Multiplexers                                         : 200
+ 1-bit 2-to-1 multiplexer                              : 191
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 4
+ 5-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Multi>.
+The following registers are absorbed into accumulator <sum>: 1 register on signal <sum>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Multi> synthesized (advanced).
+
+Synthesizing (advanced) Unit <an_gen>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <an_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <calculator_MUSER_main>.
+	Found pipelined multiplier on signal <XLXI_5/n0006>:
+		- 1 pipeline level(s) found in a register on signal <XLXN_13>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <XLXI_6/n0006>:
+		- 1 pipeline level(s) found in a register on signal <XLXN_14>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier XLXI_5/Mmult_n0006 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier XLXI_6/Mmult_n0006 by adding 1 register level(s).
+Unit <calculator_MUSER_main> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divide>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <divide> synthesized (advanced).
+WARNING:Xst:2677 - Node <XLXI_1/x_4> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/x_5> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/x_6> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/x_7> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/y_4> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/y_5> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/y_6> of sequential type is unconnected in block <calculator_MUSER_main>.
+WARNING:Xst:2677 - Node <XLXI_1/y_7> of sequential type is unconnected in block <calculator_MUSER_main>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 4x4-bit registered multiplier                         : 2
+# Adders/Subtractors                                   : 55
+ 3-bit adder                                           : 13
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 39
+ 8-bit adder                                           : 2
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 16-bit up loadable accumulator                        : 1
+# Registers                                            : 76
+ Flip-Flops                                            : 76
+# Comparators                                          : 53
+ 1-bit comparator equal                                : 1
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 51
+# Multiplexers                                         : 198
+ 1-bit 2-to-1 multiplexer                              : 191
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 4
+ 5-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_201/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 10
+ 01    | 01
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_201/XLXI_25/FSM_1> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+
+Optimizing unit <counter163_MUSER_main> ...
+
+Optimizing unit <M4_1E_MXILINX_main> ...
+
+Optimizing unit <M2_1E_MXILINX_main> ...
+
+Optimizing unit <M2_1_MXILINX_main> ...
+
+Optimizing unit <main> ...
+
+Optimizing unit <calculator_MUSER_main> ...
+
+Optimizing unit <Multi> ...
+
+Optimizing unit <BIN_BCD> ...
+
+Optimizing unit <timer_MUSER_main> ...
+
+Optimizing unit <button> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 28.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 156
+ Flip-Flops                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 853
+#      AND2                        : 22
+#      AND2B1                      : 16
+#      AND3                        : 36
+#      AND3B1                      : 32
+#      AND4                        : 8
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 78
+#      LUT2                        : 65
+#      LUT3                        : 61
+#      LUT3_D                      : 1
+#      LUT4                        : 199
+#      LUT4_D                      : 3
+#      MULT_AND                    : 15
+#      MUXCY                       : 101
+#      MUXF5                       : 31
+#      MUXF6                       : 1
+#      OR2                         : 52
+#      VCC                         : 1
+#      XOR2                        : 16
+#      XORCY                       : 97
+# FlipFlops/Latches                : 156
+#      FD                          : 39
+#      FD_1                        : 3
+#      FDE                         : 62
+#      FDR                         : 34
+#      FDRE                        : 17
+#      FDS                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 23
+#      IBUF                        : 11
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      212  out of    960    22%  
+ Number of Slice Flip Flops:            156  out of   1920     8%  
+ Number of 4 input LUTs:                424  out of   1920    22%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of     83    30%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+XLXI_6/counter_16                  | NONE(XLXI_6/an_3)             | 4     |
+btn<3>                             | BUFGP                         | 3     |
+mclk                               | BUFGP                         | 133   |
+XLXI_202/XLXI_124/clk_out          | NONE(XLXI_202/XLXI_171/XLXI_4)| 16    |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.688ns (Maximum Frequency: 115.103MHz)
+   Minimum input arrival time before clock: 4.709ns
+   Maximum output required time after clock: 50.469ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_6/counter_16'
+  Clock period: 1.351ns (frequency: 740.384MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               1.351ns (Levels of Logic = 0)
+  Source:            XLXI_6/an_2 (FF)
+  Destination:       XLXI_6/an_3 (FF)
+  Source Clock:      XLXI_6/counter_16 rising
+  Destination Clock: XLXI_6/counter_16 rising
+
+  Data Path: XLXI_6/an_2 to XLXI_6/an_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.514   0.569  XLXI_6/an_2 (XLXI_6/an_2)
+     FD:D                      0.268          XLXI_6/an_3
+    ----------------------------------------
+    Total                      1.351ns (0.782ns logic, 0.569ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'btn<3>'
+  Clock period: 2.696ns (frequency: 370.892MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               2.696ns (Levels of Logic = 1)
+  Source:            XLXI_201/XLXI_1/mode (FF)
+  Destination:       XLXI_201/XLXI_1/mode (FF)
+  Source Clock:      btn<3> falling
+  Destination Clock: btn<3> falling
+
+  Data Path: XLXI_201/XLXI_1/mode to XLXI_201/XLXI_1/mode
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.514   0.380  XLXI_201/XLXI_1/mode (XLXI_201/XLXI_1/mode)
+     INV:I->O             19   0.612   0.922  XLXI_201/XLXI_1/mode_inv1_INV_0 (XLXI_201/XLXI_1/mode_inv)
+     FD_1:D                    0.268          XLXI_201/XLXI_1/mode
+    ----------------------------------------
+    Total                      2.696ns (1.394ns logic, 1.302ns route)
+                                       (51.7% logic, 48.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 7.736ns (frequency: 129.272MHz)
+  Total number of paths / destination ports: 19431 / 234
+-------------------------------------------------------------------------
+Delay:               7.736ns (Levels of Logic = 34)
+  Source:            XLXI_202/XLXI_124/counter_1 (FF)
+  Destination:       XLXI_202/XLXI_124/counter_31 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: XLXI_202/XLXI_124/counter_1 to XLXI_202/XLXI_124/counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  XLXI_202/XLXI_124/counter_1 (XLXI_202/XLXI_124/counter_1)
+     LUT1:I0->O            1   0.612   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<1>_rt (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<1> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<2> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<3> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<4> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<5> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<6> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<7> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<8> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<9> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<10> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<11> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<12> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<13> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<14> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<15> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<16> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<17> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<18> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<19> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<20> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<21> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<22> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<23> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<24> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<25> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<26> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<27> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<28> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<29> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<30> (XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_cy<30>)
+     XORCY:CI->O           1   0.699   0.360  XLXI_202/XLXI_124/Madd_counter[31]_GND_15_o_add_1_OUT_xor<31> (XLXI_202/XLXI_124/counter[31]_GND_15_o_add_1_OUT<31>)
+     LUT4:I3->O            1   0.612   0.000  XLXI_202/XLXI_124/counter[31]_GND_15_o_equal_3_o<31>_wg_lut<7> (XLXI_202/XLXI_124/counter[31]_GND_15_o_equal_3_o<31>_wg_lut<7>)
+     MUXCY:S->O           33   0.641   1.073  XLXI_202/XLXI_124/counter[31]_GND_15_o_equal_3_o<31>_wg_cy<7> (XLXI_202/XLXI_124/counter[31]_GND_15_o_equal_3_o)
+     FDR:R                     0.795          XLXI_202/XLXI_124/counter_0
+    ----------------------------------------
+    Total                      7.736ns (5.771ns logic, 1.965ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_202/XLXI_124/clk_out'
+  Clock period: 8.688ns (frequency: 115.103MHz)
+  Total number of paths / destination ports: 312 / 16
+-------------------------------------------------------------------------
+Delay:               8.688ns (Levels of Logic = 8)
+  Source:            XLXI_202/XLXI_136/XLXI_2 (FF)
+  Destination:       XLXI_202/XLXI_171/XLXI_4 (FF)
+  Source Clock:      XLXI_202/XLXI_124/clk_out rising
+  Destination Clock: XLXI_202/XLXI_124/clk_out rising
+
+  Data Path: XLXI_202/XLXI_136/XLXI_2 to XLXI_202/XLXI_171/XLXI_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.514   0.602  XLXI_202/XLXI_136/XLXI_2 (XLXI_202/XLXN_183<1>)
+     INV:I->O              1   0.612   0.357  XLXI_202/XLXI_142 (XLXI_202/XLXN_83)
+     AND4:I0->O            6   0.612   0.569  XLXI_202/XLXI_140 (XLXI_202/XLXN_115)
+     AND2:I1->O            2   0.612   0.380  XLXI_202/XLXI_169 (XLXI_202/XLXN_140)
+     AND2:I1->O            1   0.612   0.357  XLXI_202/XLXI_175 (XLXI_202/XLXN_155)
+     OR2:I1->O             8   0.612   0.643  XLXI_202/XLXI_170 (XLXI_202/XLXN_156)
+     begin scope: 'XLXI_202/XLXI_171/XLXI_75:S0'
+     AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'XLXI_202/XLXI_171/XLXI_75:O'
+     FD:D                      0.268          XLXI_202/XLXI_171/XLXI_4
+    ----------------------------------------
+    Total                      8.688ns (5.066ns logic, 3.622ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
+  Total number of paths / destination ports: 83 / 40
+-------------------------------------------------------------------------
+Offset:              4.709ns (Levels of Logic = 3)
+  Source:            btn<0> (PAD)
+  Destination:       XLXI_201/XLXI_6/Mmult_n0006_0 (FF)
+  Destination Clock: mclk rising
+
+  Data Path: btn<0> to XLXI_201/XLXI_6/Mmult_n0006_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  btn_0_IBUF (btn_0_IBUF)
+     LUT3:I0->O            2   0.612   0.532  XLXI_201/XLXI_1/_n00671 (XLXI_201/XLXI_1/_n0067)
+     LUT3:I0->O            8   0.612   0.643  XLXI_201/XLXI_1/_n0070_inv1 (XLXI_201/XLXI_1/_n0070_inv)
+     FDRE:CE                   0.483          XLXI_201/XLXI_1/x_0
+    ----------------------------------------
+    Total                      4.709ns (2.813ns logic, 1.896ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_6/counter_16'
+  Total number of paths / destination ports: 1040 / 11
+-------------------------------------------------------------------------
+Offset:              12.418ns (Levels of Logic = 9)
+  Source:            XLXI_6/an_3 (FF)
+  Destination:       seg<4> (PAD)
+  Source Clock:      XLXI_6/counter_16 rising
+
+  Data Path: XLXI_6/an_3 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.514   0.721  XLXI_6/an_3 (XLXI_6/an_3)
+     LUT4:I0->O           10   0.612   0.902  XLXI_201/XLXI_15/an[3]_PWR_10_o_equal_1_o<3>1 (XLXI_201/XLXI_15/an[3]_PWR_10_o_equal_1_o)
+     LUT4:I0->O            1   0.612   0.000  XLXI_199/Mmux_O11321 (XLXI_199/Mmux_O11321)
+     MUXF5:I1->O           1   0.278   0.360  XLXI_199/Mmux_O1132_f5 (XLXI_199/Mmux_O1132)
+     LUT4:I3->O            1   0.612   0.360  XLXI_199/Mmux_O1147 (XLXI_199/Mmux_O1147)
+     LUT4:I3->O            1   0.612   0.360  XLXI_199/Mmux_O11137_SW0_SW0 (N94)
+     LUT4:I3->O            1   0.612   0.360  XLXI_199/Mmux_O11137_SW0 (N86)
+     LUT4:I3->O            7   0.612   0.754  XLXI_199/Mmux_O11137 (XLXI_199/Mmux_O11137)
+     LUT4:I0->O            1   0.612   0.357  XLXI_26/dec_out<4>1 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                     12.418ns (8.245ns logic, 4.173ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'btn<3>'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              6.708ns (Levels of Logic = 3)
+  Source:            XLXI_206/out1 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      btn<3> falling
+
+  Data Path: XLXI_206/out1 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.514   0.690  XLXI_206/out1 (XLXI_206/out1)
+     LUT4:I0->O            7   0.612   0.754  XLXI_199/Mmux_O14288 (XLXI_199/Mmux_O14288)
+     LUT4:I0->O            1   0.612   0.357  XLXI_26/dec_out<5>1 (seg_5_OBUF)
+     OBUF:I->O                 3.169          seg_5_OBUF (seg<5>)
+    ----------------------------------------
+    Total                      6.708ns (4.907ns logic, 1.801ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_202/XLXI_124/clk_out'
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Offset:              7.851ns (Levels of Logic = 4)
+  Source:            XLXI_202/XLXI_150/XLXI_1 (FF)
+  Destination:       seg<4> (PAD)
+  Source Clock:      XLXI_202/XLXI_124/clk_out rising
+
+  Data Path: XLXI_202/XLXI_150/XLXI_1 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.514   0.795  XLXI_202/XLXI_150/XLXI_1 (XLXI_202/XLXN_185<0>)
+     LUT4:I0->O            1   0.612   0.426  XLXI_199/Mmux_O11115 (XLXI_199/Mmux_O11115)
+     LUT4:I1->O            7   0.612   0.754  XLXI_199/Mmux_O11137 (XLXI_199/Mmux_O11137)
+     LUT4:I0->O            1   0.612   0.357  XLXI_26/dec_out<4>1 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                      7.851ns (5.519ns logic, 2.332ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 7150771516 / 7
+-------------------------------------------------------------------------
+Offset:              50.469ns (Levels of Logic = 42)
+  Source:            XLXI_201/XLXI_1/add (FF)
+  Destination:       seg<1> (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: XLXI_201/XLXI_1/add to seg<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            26   0.514   1.140  XLXI_201/XLXI_1/add (XLXI_201/XLXI_1/add)
+     LUT4:I1->O            6   0.612   0.599  XLXI_201/XLXI_14/Madd_n0461[3:0]_cy<2>1 (XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_28_OUT_lut<2>)
+     LUT4:I2->O            2   0.612   0.449  XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_10_OUT_cy<1>11 (XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_10_OUT_cy<1>)
+     LUT4:I1->O            8   0.612   0.795  XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_74_o14 (XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_20_OUT_cy<0>)
+     LUT4:I0->O            4   0.612   0.502  XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_74_o121 (XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_18_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_90_o121 (XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_90_o12)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_GND_10_o_LessThan_18_o1 (XLXI_201/XLXI_14/GND_10_o_GND_10_o_LessThan_18_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[12]_GND_10_o_MUX_92_o11 (XLXI_201/XLXI_14/Madd_GND_10_o_GND_10_o_add_26_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.502  XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_106_o111 (XLXI_201/XLXI_14/Mmux_GND_10_o_GND_10_o_MUX_106_o11)
+     LUT4:I3->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_GND_10_o_LessThan_26_o1 (XLXI_201/XLXI_14/GND_10_o_GND_10_o_LessThan_26_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[11]_GND_10_o_MUX_108_o11 (XLXI_201/XLXI_14/Madd_bi[12]_GND_10_o_add_34_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[12]_bi[12]_MUX_122_o111 (XLXI_201/XLXI_14/Mmux_bi[12]_bi[12]_MUX_122_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[12]_LessThan_34_o1 (XLXI_201/XLXI_14/GND_10_o_bi[12]_LessThan_34_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[10]_bi[12]_MUX_124_o11 (XLXI_201/XLXI_14/Madd_bi[11]_GND_10_o_add_42_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[11]_bi[11]_MUX_138_o111 (XLXI_201/XLXI_14/Mmux_bi[11]_bi[11]_MUX_138_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[11]_LessThan_42_o1 (XLXI_201/XLXI_14/GND_10_o_bi[11]_LessThan_42_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[9]_bi[11]_MUX_140_o11 (XLXI_201/XLXI_14/Madd_bi[10]_GND_10_o_add_50_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[10]_bi[10]_MUX_154_o111 (XLXI_201/XLXI_14/Mmux_bi[10]_bi[10]_MUX_154_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[10]_LessThan_50_o1 (XLXI_201/XLXI_14/GND_10_o_bi[10]_LessThan_50_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[8]_bi[10]_MUX_156_o11 (XLXI_201/XLXI_14/Madd_bi[9]_GND_10_o_add_58_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[9]_bi[9]_MUX_170_o111 (XLXI_201/XLXI_14/Mmux_bi[9]_bi[9]_MUX_170_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[9]_LessThan_58_o1 (XLXI_201/XLXI_14/GND_10_o_bi[9]_LessThan_58_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[7]_bi[9]_MUX_172_o11 (XLXI_201/XLXI_14/Madd_bi[8]_GND_10_o_add_66_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[8]_bi[8]_MUX_186_o111 (XLXI_201/XLXI_14/Mmux_bi[8]_bi[8]_MUX_186_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[8]_LessThan_66_o1 (XLXI_201/XLXI_14/GND_10_o_bi[8]_LessThan_66_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[6]_bi[8]_MUX_188_o11 (XLXI_201/XLXI_14/Madd_bi[7]_GND_10_o_add_74_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[7]_bi[7]_MUX_202_o111 (XLXI_201/XLXI_14/Mmux_bi[7]_bi[7]_MUX_202_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[7]_LessThan_74_o1 (XLXI_201/XLXI_14/GND_10_o_bi[7]_LessThan_74_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[5]_bi[7]_MUX_204_o11 (XLXI_201/XLXI_14/Madd_bi[6]_GND_10_o_add_82_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[6]_bi[6]_MUX_218_o111 (XLXI_201/XLXI_14/Mmux_bi[6]_bi[6]_MUX_218_o11)
+     LUT2:I0->O            3   0.612   0.603  XLXI_201/XLXI_14/GND_10_o_bi[6]_LessThan_82_o1 (XLXI_201/XLXI_14/GND_10_o_bi[6]_LessThan_82_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[4]_bi[6]_MUX_220_o11 (XLXI_201/XLXI_14/Madd_bi[5]_GND_10_o_add_90_OUT_lut<2>)
+     LUT4:I3->O            4   0.612   0.651  XLXI_201/XLXI_14/Mmux_bi[5]_bi[5]_MUX_234_o111 (XLXI_201/XLXI_14/Mmux_bi[5]_bi[5]_MUX_234_o11)
+     LUT2:I0->O            4   0.612   0.651  XLXI_201/XLXI_14/GND_10_o_bi[5]_LessThan_90_o1 (XLXI_201/XLXI_14/GND_10_o_bi[5]_LessThan_90_o)
+     LUT4:I0->O            2   0.612   0.383  XLXI_201/XLXI_14/Mmux_bi[3]_bi[5]_MUX_236_o11 (XLXI_201/XLXI_14/Madd_bi[4]_GND_10_o_add_98_OUT_lut<2>)
+     LUT4:I3->O            3   0.612   0.603  XLXI_201/XLXI_14/Mmux_ans<4>111 (XLXI_201/XLXI_14/Mmux_ans<4>11)
+     LUT4:I0->O            1   0.612   0.000  XLXI_199/Mmux_O132582 (XLXI_199/Mmux_O132582)
+     MUXF5:I0->O           2   0.278   0.532  XLXI_199/Mmux_O13258_f5 (XLXI_199/Mmux_O13258)
+     LUT4:I0->O            1   0.612   0.000  XLXI_199/Mmux_O13320_SW01 (XLXI_199/Mmux_O13320_SW0)
+     MUXF5:I1->O           1   0.278   0.360  XLXI_199/Mmux_O13320_SW0_f5 (XLXI_199/Mmux_O13320_SW0_f5)
+     LUT4:I3->O            7   0.612   0.754  XLXI_199/Mmux_O13320 (XLXI_199/Mmux_O13320)
+     LUT4:I0->O            1   0.612   0.357  XLXI_26/dec_out<1>1 (seg_1_OBUF)
+     OBUF:I->O                 3.169          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                     50.469ns (28.107ns logic, 22.362ns route)
+                                       (55.7% logic, 44.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_202/XLXI_124/clk_out
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+XLXI_202/XLXI_124/clk_out|    8.688|         |         |         |
+mclk                     |    6.019|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_6/counter_16
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+XLXI_6/counter_16|    1.351|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock btn<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn<3>         |         |         |    2.696|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn<3>         |         |    3.223|         |         |
+mclk           |    7.736|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.31 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+Total memory usage is 248104 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

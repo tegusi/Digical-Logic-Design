@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab3/led_decoder.v -lang verilog -prj lab3 -o led_decoder.spl -module led_decoder -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w led_decoder.spl C:/Users/tegusi/lab3/led_decoder.sym 

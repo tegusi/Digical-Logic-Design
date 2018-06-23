@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/an_gen.v -lang verilog -prj lab2 -o an_gen.spl -module an_gen -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e an_gen.spl C:/Users/tegusi/Documents/lab2/lab2/an_gen.sym 

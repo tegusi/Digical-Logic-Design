@@ -1,0 +1,22 @@
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.v -lang verilog -prj lab2 -o BCD_BIN.spl -module BCD_BIN -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD_BIN.spl C:/Users/tegusi/Documents/lab2/lab2/BCD_BIN.sym 

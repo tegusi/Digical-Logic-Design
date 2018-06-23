@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab0.vf
+// /___/   /\     Timestamp : 04/14/2018 22:03:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/tegusi/lab0/lab0.vf -w C:/Users/tegusi/lab0/lab0.sch
+//Design Name: lab0
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab0(SW, 
+            LD);
+
+    input [2:0] SW;
+   output [7:0] LD;
+   
+   
+   AND2  XLXI_2 (.I0(SW[0]), 
+                .I1(SW[1]), 
+                .O(LD[7]));
+   NAND2  XLXI_3 (.I0(SW[0]), 
+                 .I1(SW[1]), 
+                 .O(LD[6]));
+   OR2  XLXI_4 (.I0(SW[0]), 
+               .I1(SW[1]), 
+               .O(LD[5]));
+   NOR2  XLXI_5 (.I0(SW[0]), 
+                .I1(SW[1]), 
+                .O(LD[4]));
+   XOR2  XLXI_6 (.I0(SW[0]), 
+                .I1(SW[1]), 
+                .O(LD[3]));
+   XNOR2  XLXI_8 (.I0(SW[0]), 
+                 .I1(SW[1]), 
+                 .O(LD[2]));
+   fulladd  XLXI_16 (.a(SW[1]), 
+                    .b(SW[0]), 
+                    .cin(SW[2]), 
+                    .cout(LD[0]), 
+                    .sum(LD[1]));
+endmodule

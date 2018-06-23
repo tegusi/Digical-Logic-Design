@@ -1,0 +1,51 @@
+select figure at 2022 2143 8 -branches -sn=1
+move instance at 2192 2032 to 2336 2032 R180 -keepConn -sn=1
+undo
+select figure at 1560 1898 8 -branches -sn=1
+select figure at 1570 1761 8 -branches -sn=1
+select all in 1570 1761 2605 2786 -branches -enclosed -sn=1
+move selection by 1568 -1328 -keepConn -sn=1
+select figure at 3254 1580 8 -branches -sn=1
+select figure at 3522 1041 8 -branches -sn=1
+select figure at 4259 1898 8 -branches -sn=1
+select all in 3120 449 4259 1898 -branches -enclosed -sn=1
+select figure at 3214 874 8 -branches -sn=1
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+select figure at 1038 366 8 -branches -sn=1
+select figure at 1922 734 8 -branches -sn=1
+select figure at 1535 1102 8 -branches -sn=1
+select all in 1535 1102 2316 1881 -branches -enclosed -sn=1
+select figure at 2461 1677 8 -branches -sn=1
+select figure at 1562 1060 8 -branches -sn=1
+select all in 1562 1060 2416 1836 -branches -enclosed -sn=1
+move selection by -80 0 -keepConn -sn=1
+undo
+select figure at 2115 1755 8 -branches -sn=1
+select figure at 2054 1476 8 -branches -sn=1
+select figure at 2559 1448 8 -branches -sn=1
+select figure at 1925 965 8 -branches -sn=1
+select figure at 2667 2185 8 -branches -sn=1
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+select figure at 2567 798 8 -branches -sn=1
+select figure at 2081 583 8 -branches -sn=1
+select figure at 2148 611 8 -branches -sn=1

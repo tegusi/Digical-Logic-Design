@@ -1,0 +1,4 @@
+verilog work "BCD2Binary.v"
+verilog work "Sch.vf"
+verilog work "Test.v"
+verilog work "D:/Shuluo/14.7/ISE_DS/ISE//verilog/src/glbl.v"

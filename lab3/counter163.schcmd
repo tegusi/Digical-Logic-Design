@@ -1,0 +1,266 @@
+add instance muxf8 1456 912 R0 -sn=1
+undo
+add instance m2_1 1552 864 R0 -sn=1
+undo
+add instance m2_1 1632 912 R0 -sn=1
+undo
+add instance m4_1e 1088 736 R0 -sn=1
+undo
+add instance m8_1e 608 880 R0 -sn=1
+undo
+add instance m8_1e 880 896 R0 -sn=1
+undo
+select figure at 3040 450 8 -branches -sn=1
+select figure at 3107 498 8 -branches -sn=1
+select all in 2770 380 3107 498 -branches -enclosed -sn=1
+BeginGroup
+ADD WIRE 2800 912 2992 912 -sn=1
+PASTE NAME BRANCH AT 2800 912 QD -NoDuplicateNetNames -sn=1
+ADD IOMARKER 2992 912 8 Output R0 28 -sn=1
+EndGroup
+select figure at 2801 912 8 -branches -sn=1
+move instance at 2416 1152 to 2416 1136 R0 -keepConn -sn=1
+undo
+undo
+undo
+undo
+select figure at 2933 901 8 -branches -sn=1
+select figure at 2916 752 8 -branches -sn=1
+select figure at 583 600 8 -branches -sn=1
+select figure at 3223 577 8 -branches -sn=1
+select all in 2694 332 3223 577 -branches -enclosed -sn=1
+select figure at 2801 892 8 -branches -sn=1
+BeginGroup
+ADD WIRE 2800 896 2992 896 -sn=1
+PASTE NAME BRANCH AT 2800 896 QD -NoDuplicateNetNames -sn=1
+ADD IOMARKER 2992 896 8 Output R0 28 -sn=1
+EndGroup
+BeginGroup
+ADD WIRE 2800 1312 2992 1312 -sn=1
+PASTE NAME BRANCH AT 2800 1312 QD -NoDuplicateNetNames -sn=1
+ADD IOMARKER 2992 1312 8 Output R0 28 -sn=1
+EndGroup
+BeginGroup
+ADD WIRE 2800 1744 2992 1744 -sn=1
+PASTE NAME BRANCH AT 2800 1744 QD -NoDuplicateNetNames -sn=1
+ADD IOMARKER 2992 1744 8 Output R0 28 -sn=1
+EndGroup
+select figure at 3061 881 8 -branches -sn=1
+select figure at 3061 881 8 -branches -all -sn=1
+set attr NA|XLXN_4|Name value QC -sn=1
+select figure at 3080 1297 8 -branches -sn=1
+select figure at 3080 1297 8 -branches -all -sn=1
+set attr NA|XLXN_5|Name value QB -sn=1
+select figure at 2997 1728 8 -branches -sn=1
+select figure at 3000 1732 8 -branches -sn=1
+select figure at 3049 1743 8 -branches -sn=1
+select figure at 3049 1743 8 -branches -all -sn=1
+set attr NA|XLXN_6|Name value QA -sn=1
+add autowire 528 1904 912 1904 8 -sn=1
+add iomarker 528 1904 0 Unknown Unknown -sn=1
+select figure at 460 1898 8 -branches -sn=1
+select figure at 460 1898 8 -branches -all -sn=1
+set attr NA|XLXN_7|Name value EN -sn=1
+add instance xor2 768 800 R0 -sn=1
+add autowire 2848 448 576 672 8 -sn=1
+add instance constant 560 544 R0 -sn=1
+select figure at 608 577 8 -branches -sn=1
+select figure at 608 577 8 -branches -sn=1
+select figure at 608 577 8 -branches -all -sn=1
+add attr BA|XLXI_24|CValue 1 "EditName|all:1 sch:0|EditValue|all:1|EditTrait|all:1|View|all:1|Delete|all:1 sym:0|Verilog|all:0|Vhdl|all:0|ValueType|BitVector:32:Hexadecimal" -addInstWindow -sn=1
+select figure at 575 666 8 -branches -sn=1
+move branchpt at 576 672 to 576 720 -keepConn -sn=1
+move branchpt at 576 720 to 576 800 -keepConn -sn=1
+add autowire 768 736 576 800 8 -sn=1
+select figure at 598 561 8 -branches -sn=1
+BeginGroup
+add wire 768 672 736 672 -sn=1
+move instance at 560 544 to 592 640 R0 -keepConn -sn=1
+EndGroup
+select figure at 643 493 8 -branches -sn=1
+select figure at 694 680 8 -branches -sn=1
+move instance at 592 640 to 576 624 R0 -keepConn -sn=1
+move instance at 576 624 to 592 640 R0 -keepConn -sn=1
+move instance at 592 640 to 576 640 R0 -keepConn -sn=1
+select figure at 584 812 8 -branches -sn=1
+select figure at 59 312 8 -branches -sn=1
+add autowire 576 816 592 1840 8 -sn=1
+select figure at 600 1837 8 -branches -sn=1
+move branchpt at 592 1840 to 576 1840 -keepConn -sn=1
+select figure at 532 1909 8 -branches -sn=1
+select figure at 403 1869 8 -branches -sn=1
+select all in 403 1869 1006 2008 -branches -enclosed -sn=1
+move selection by -16 496 -keepConn -sn=1
+add autowire 640 912 640 1904 8 -sn=1
+add autowire 576 1840 576 1904 8 -sn=1
+add autowire 2880 896 640 1104 8 -sn=1
+add autowire 704 1296 704 1904 8 -sn=1
+add autowire 2912 1312 704 1488 8 -sn=1
+select figure at 720 1489 8 -branches -sn=1
+select figure at 788 1504 8 -wires -sn=1
+select figure at 762 1567 8 -wires -sn=1
+select figure at 718 1504 8 -wires -sn=1
+select figure at 704 1489 8 -wires -sn=1
+select figure at 776 1508 8 -wires -sn=1
+select figure at 720 1482 8 -wires -sn=1
+move selection by 16 0 -keepConn -sn=1
+select figure at 706 1482 8 -wires -sn=1
+select figure at 741 1487 8 -wires -sn=1
+select figure at 741 1506 8 -wires -sn=1
+select figure at 729 1489 8 -wires -sn=1
+delete selection -sn=1
+select figure at 720 1583 8 -wires -sn=1
+move wire at 720 1584 2912 1584 to 2912 1584 704 1584 -breakConn -sn=1
+select figure at 711 1292 8 -wires -sn=1
+move wire at 704 1296 704 1584 to 704 1584 704 1520 -breakConn -sn=1
+delete selection -sn=1
+select figure at 636 1048 8 -wires -sn=1
+delete selection -sn=1
+select figure at 2681 912 8 -wires -sn=1
+select figure at 2876 927 8 -wires -sn=1
+add instance m4_1e 1200 768 R0 -sn=1
+select figure at 866 701 8 -wires -sn=1
+move instance at 768 800 to 336 544 R0 -keepConn -sn=1
+select figure at 671 683 8 -wires -sn=1
+move instance at 576 640 to 240 208 R0 -keepConn -sn=1
+move instance at 240 208 to 112 320 R0 -keepConn -sn=1
+move instance at 112 320 to 96 400 R0 -keepConn -sn=1
+move instance at 96 400 to 96 368 R0 -keepConn -sn=1
+select figure at 490 450 8 -wires -sn=1
+move instance at 336 544 to 848 448 R0 -keepConn -sn=1
+select figure at 160 385 8 -wires -sn=1
+move instance at 96 368 to 672 288 R0 -keepConn -sn=1
+BeginGroup
+add wire 1200 416 1168 416 -sn=1
+add iomarker 1168 416 0 Input Unknown -sn=1
+EndGroup
+select figure at 1112 408 8 -wires -sn=1
+select figure at 1112 408 8 -wires -all -sn=1
+select figure at 1175 476 8 -wires -sn=1
+select figure at 1112 418 8 -wires -sn=1
+select figure at 1128 420 8 -wires -sn=1
+select figure at 1117 422 8 -wires -sn=1
+select figure at 1117 422 8 -wires -all -sn=1
+set attr NA|XLXN_21|Name value A -sn=1
+select figure at 959 375 8 -wires -sn=1
+BeginGroup
+add wire 1200 352 1168 352 -sn=1
+move instance at 848 448 to 912 448 R0 -keepConn -sn=1
+EndGroup
+select figure at 706 307 8 -wires -sn=1
+move instance at 672 288 to 800 240 R0 -keepConn -sn=1
+move instance at 800 240 to 736 192 R0 -keepConn -sn=1
+move instance at 736 192 to 784 192 R0 -keepConn -sn=1
+move instance at 784 192 to 768 192 R0 -keepConn -sn=1
+move instance at 768 192 to 736 176 R0 -keepConn -sn=1
+select figure at 945 720 8 -wires -sn=1
+select figure at 774 223 8 -wires -sn=1
+BeginGroup
+add wire 1200 544 1168 544 -sn=1
+ADD INSTANCE constant 1024 512 R0 -sn=1
+ADD ATTR XYI|1096:544|CValue 1 "EditName|all:1 sch:0|EditValue|all:1|EditTrait|all:1|View|all:1|Delete|all:1 sym:0|Verilog|all:0|Vhdl|all:0|ValueType|BitVector:32:Hexadecimal" -replace -sn=1
+PASTE NAME INSTANCE AT 1096 544 XLXI_24 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 1088 537 8 -wires -sn=1
+select figure at 1088 537 8 -wires -all -sn=1
+set attr BA|XLXI_26|CValue value 0 -sn=1
+BeginGroup
+ADD INSTANCE constant 1040 576 R0 -sn=1
+ADD ATTR XYI|1112:608|CValue 1 "EditName|all:1 sch:0|EditValue|all:1|EditTrait|all:1|View|all:1|Delete|all:1 sym:0|Verilog|all:0|Vhdl|all:0|ValueType|BitVector:32:Hexadecimal" -replace -sn=1
+PASTE NAME INSTANCE AT 1112 608 XLXI_24 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 1086 608 8 -wires -sn=1
+move instance at 1040 576 to 1024 576 R0 -keepConn -sn=1
+select figure at 1081 612 8 -wires -sn=1
+BeginGroup
+add wire 1200 608 1168 608 -sn=1
+move instance at 1024 576 to 1024 576 R0 -keepConn -sn=1
+EndGroup
+select figure at 969 657 8 -wires -sn=1
+select figure at 1090 533 8 -wires -sn=1
+select figure at 1112 605 8 -wires -sn=1
+select figure at 1112 605 8 -wires -all -sn=1
+set attr BA|XLXI_27|CValue value 0 -sn=1
+select figure at 1552 603 8 -wires -sn=1
+add autowire 256 304 272 1248 8 -sn=1
+add autowire 272 1248 272 1936 8 -sn=1
+add autowire 368 304 368 1952 8 -sn=1
+add iomarker 256 304 0 Unknown Unknown -sn=1
+add iomarker 368 304 0 Unknown Unknown -sn=1
+select figure at 176 297 8 -wires -sn=1
+select figure at 176 297 8 -wires -all -sn=1
+set attr NA|XLXN_26|Name value LOAD -sn=1
+select figure at 358 213 8 -wires -sn=1
+select figure at 358 213 8 -wires -all -sn=1
+set attr NA|XLXN_27|Name value CLR -sn=1
+select figure at 1046 570 8 -wires -sn=1
+select figure at 1058 610 8 -wires -sn=1
+move instance at 1024 576 to 1024 448 R0 -keepConn -sn=1
+select figure at 1185 589 8 -wires -sn=1
+select figure at 1178 598 8 -wires -sn=1
+delete selection -sn=1
+select figure at 1187 481 8 -wires -sn=1
+move wire at 1168 480 1184 480 to 1168 480 1200 480 -breakConn -sn=1
+select figure at 1206 481 8 -wires -sn=1
+add autowire 1184 608 272 608 8 -sn=1
+add autowire 1200 672 368 688 8 -sn=1
+select figure at 807 219 8 -wires -sn=1
+move instance at 736 176 to 736 288 R0 -keepConn -sn=1
+select figure at 895 528 8 -wires -sn=1
+select figure at 1204 737 8 -wires -sn=1
+select figure at 1100 551 8 -wires -sn=1
+BeginGroup
+ADD INSTANCE constant 1040 704 R0 -sn=1
+ADD ATTR XYI|1112:736|CValue 0 "EditName|all:1 sch:0|EditValue|all:1|EditTrait|all:1|View|all:1|Delete|all:1 sym:0|Verilog|all:0|Vhdl|all:0|ValueType|BitVector:32:Hexadecimal" -replace -sn=1
+PASTE NAME INSTANCE AT 1112 736 XLXI_26 -NoDuplicateNetNames -sn=1
+EndGroup
+select figure at 1186 733 8 -wires -sn=1
+BeginGroup
+add wire 1200 736 1168 736 -sn=1
+move instance at 1040 704 to 1024 704 R0 -keepConn -sn=1
+EndGroup
+BeginGroup
+add wire 1200 736 1168 736 -sn=1
+move instance at 1040 704 to 1024 704 R0 -keepConn -sn=1
+EndGroup
+select figure at 1488 685 8 -wires -sn=1
+select figure at 1180 736 8 -wires -sn=1
+BeginGroup
+add wire 1200 736 1168 736 -sn=1
+move instance at 1040 704 to 1024 704 R0 -keepConn -sn=1
+EndGroup
+select figure at 1107 731 8 -wires -sn=1
+move instance at 1040 704 to 992 720 R0 -keepConn -sn=1
+BeginGroup
+add wire 1200 736 1168 736 -sn=1
+move instance at 992 720 to 1024 704 R0 -keepConn -sn=1
+EndGroup
+select figure at 1094 732 8 -wires -sn=1
+select figure at 1094 732 8 -wires -all -sn=1
+set attr BA|XLXI_28|CValue value 1 -sn=1
+select figure at 866 1034 8 -wires -sn=1
+select figure at 1386 455 8 -wires -sn=1
+select figure at 1576 746 8 -wires -sn=1
+select figure at 1604 776 8 -wires -sn=1
+select all in 734 272 1604 776 -wires -enclosed -sn=1
+select figure at 715 267 8 -wires -sn=1
+select figure at 1665 589 8 -wires -sn=1
+select figure at 1618 781 8 -wires -sn=1
+select all in 901 232 1618 781 -wires -enclosed -sn=1
+select figure at 1633 598 8 -wires -sn=1
+add autowire 176 400 176 1952 8 -sn=1
+add iomarker 176 400 0 Unknown Unknown -sn=1
+select figure at 181 347 8 -wires -sn=1
+select figure at 181 347 8 -wires -all -sn=1
+select figure at 521 2393 8 -wires -sn=1
+delete selection -sn=1
+select figure at 467 2390 8 -wires -sn=1
+delete selection -sn=1
+select figure at 183 364 8 -wires -sn=1
+select figure at 183 364 8 -wires -all -sn=1
+set attr NA|XLXN_30|Name value EN -sn=1
+set attr NA|EN|Name value XLXN_30 -sn=1
+select figure at 178 382 8 -wires -sn=1
+select figure at 178 382 8 -wires -all -sn=1
+set attr NA|XLXN_30|Name value EN -sn=1
+select figure at 70 579 8 -wires -sn=1

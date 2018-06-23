@@ -1,0 +1,10 @@
+[Inputs]
+sig
+=P1[3:0]=
+=P2[3:0]=
+[Outputs]
+=O1[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel mux_2
+

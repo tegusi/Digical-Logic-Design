@@ -1,0 +1,13 @@
+[Inputs]
+mclk
+=bin[7:0]=
+=btn[3:0]=
+[Outputs]
+multi
+add
+=x[7:0]=
+=y[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel cal_controller
+

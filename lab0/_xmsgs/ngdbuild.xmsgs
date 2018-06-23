@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sw&lt;7&gt;&quot; LOC = &quot;N3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(54)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw&lt;7&gt;</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sw&lt;7&gt;&quot; LOC = &quot;N3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(54)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sw&lt;6&gt;&quot; LOC = &quot;E2&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(55)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw&lt;6&gt;</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sw&lt;6&gt;&quot; LOC = &quot;E2&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(55)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sw&lt;5&gt;&quot; LOC = &quot;F3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(56)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw&lt;5&gt;</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sw&lt;5&gt;&quot; LOC = &quot;F3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(56)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sw&lt;4&gt;&quot; LOC = &quot;G3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(57)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw&lt;4&gt;</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sw&lt;4&gt;&quot; LOC = &quot;G3&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(57)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sw&lt;3&gt;&quot; LOC = &quot;B4&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(58)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw&lt;3&gt;</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sw&lt;3&gt;&quot; LOC = &quot;B4&quot;;&gt; [C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf(58)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+</messages>
+

@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym counter163 C:/Users/tegusi/lab3/counter163.sch C:/Users/tegusi/lab3/counter163.sym 
+sch2sym -intstyle ise -family spartan3e -refsym counter163 C:/Users/tegusi/lab3/counter163.sch C:/Users/tegusi/lab3/counter163.sym 
+sch2sym -intstyle ise -family spartan3e -refsym counter163 C:/Users/tegusi/lab3/counter163.sch C:/Users/tegusi/lab3/counter163.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym counter163 C:/Users/tegusi/lab3/counter163.sch C:/Users/tegusi/lab3/counter163.sym 

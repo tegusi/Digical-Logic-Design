@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sch.vf
+// /___/   /\     Timestamp : 04/14/2018 21:53:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/tegusi/Lab1/Sch.vf -w C:/Users/tegusi/Lab1/Sch.sch
+//Design Name: Sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Sch(SW, 
+           LD);
+
+    input [7:0] SW;
+   output [7:0] LD;
+   
+   
+   BCD2Binary  XLXI_1 (.in_number(SW[7:0]), 
+                      .out_number(LD[7:0]));
+endmodule

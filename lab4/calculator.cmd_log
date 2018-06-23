@@ -1,0 +1,8 @@
+sch2sym -intstyle ise -family spartan3e -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calculator C:/Users/tegusi/lab4/calculator.sch C:/Users/tegusi/lab4/calculator.sym 

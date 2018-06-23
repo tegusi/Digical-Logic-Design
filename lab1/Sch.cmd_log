@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 Sch.ngc Sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Sch_map.ncd Sch.ngd Sch.pcf 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 Sch.ngc Sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Sch_map.ncd Sch.ngd Sch.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_map.ncd Sch.ncd Sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch.twx Sch.ncd -o Sch.twr Sch.pcf 
+bitgen -intstyle ise -f Sch.ut Sch.ncd 
+bitgen -intstyle ise -f Sch.ut Sch.ncd 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 Sch.ngc Sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Sch_map.ncd Sch.ngd Sch.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_map.ncd Sch.ncd Sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch.twx Sch.ncd -o Sch.twr Sch.pcf 
+bitgen -intstyle ise -f Sch.ut Sch.ncd 
+xst -intstyle ise -ifn "C:/Users/tegusi/Lab1/Sch.xst" -ofn "C:/Users/tegusi/Lab1/Sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 Sch.ngc Sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Sch_map.ncd Sch.ngd Sch.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_map.ncd Sch.ncd Sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch.twx Sch.ncd -o Sch.twr Sch.pcf 
+bitgen -intstyle ise -f Sch.ut Sch.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/tegusi/Downloads/lab0/Basys2_Lab1.ucf -p xc3s100e-cp132-5 Sch.ngc Sch.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Sch_map.ncd Sch.ngd Sch.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_map.ncd Sch.ncd Sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch.twx Sch.ncd -o Sch.twr Sch.pcf 
+bitgen -intstyle ise -f Sch.ut Sch.ncd 

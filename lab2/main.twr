@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Shuluo\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf Basys2_Lab2.ucf
+
+Design file:              main.ncd
+Physical constraint file: main.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    3.348|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<0>          |seg<0>         |   16.908|
+SW<0>          |seg<1>         |   16.192|
+SW<0>          |seg<2>         |   17.008|
+SW<0>          |seg<3>         |   16.872|
+SW<0>          |seg<4>         |   15.631|
+SW<0>          |seg<5>         |   16.121|
+SW<0>          |seg<6>         |   17.000|
+SW<1>          |seg<0>         |   16.532|
+SW<1>          |seg<1>         |   15.816|
+SW<1>          |seg<2>         |   16.632|
+SW<1>          |seg<3>         |   16.496|
+SW<1>          |seg<4>         |   15.255|
+SW<1>          |seg<5>         |   15.745|
+SW<1>          |seg<6>         |   16.624|
+SW<2>          |seg<0>         |   16.894|
+SW<2>          |seg<1>         |   16.178|
+SW<2>          |seg<2>         |   16.994|
+SW<2>          |seg<3>         |   16.858|
+SW<2>          |seg<4>         |   15.617|
+SW<2>          |seg<5>         |   16.107|
+SW<2>          |seg<6>         |   16.986|
+SW<3>          |seg<0>         |   16.898|
+SW<3>          |seg<1>         |   16.182|
+SW<3>          |seg<2>         |   16.998|
+SW<3>          |seg<3>         |   16.862|
+SW<3>          |seg<4>         |   15.621|
+SW<3>          |seg<5>         |   16.111|
+SW<3>          |seg<6>         |   16.990|
+SW<4>          |seg<0>         |   17.236|
+SW<4>          |seg<1>         |   16.520|
+SW<4>          |seg<2>         |   17.336|
+SW<4>          |seg<3>         |   17.200|
+SW<4>          |seg<4>         |   15.959|
+SW<4>          |seg<5>         |   16.449|
+SW<4>          |seg<6>         |   17.328|
+SW<5>          |seg<0>         |   17.258|
+SW<5>          |seg<1>         |   16.542|
+SW<5>          |seg<2>         |   17.358|
+SW<5>          |seg<3>         |   17.222|
+SW<5>          |seg<4>         |   15.981|
+SW<5>          |seg<5>         |   16.471|
+SW<5>          |seg<6>         |   17.350|
+SW<6>          |seg<0>         |   17.003|
+SW<6>          |seg<1>         |   16.287|
+SW<6>          |seg<2>         |   17.103|
+SW<6>          |seg<3>         |   16.967|
+SW<6>          |seg<4>         |   15.726|
+SW<6>          |seg<5>         |   16.216|
+SW<6>          |seg<6>         |   17.095|
+SW<7>          |seg<0>         |   16.679|
+SW<7>          |seg<1>         |   15.963|
+SW<7>          |seg<2>         |   16.779|
+SW<7>          |seg<3>         |   16.643|
+SW<7>          |seg<4>         |   15.402|
+SW<7>          |seg<5>         |   15.892|
+SW<7>          |seg<6>         |   16.771|
+---------------+---------------+---------+
+
+
+Analysis completed Sun May 06 20:55:12 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 165 MB
+
+
+

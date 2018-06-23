@@ -1,0 +1,3 @@
+MODULE lab0
+	SUBMODULE fulladd
+		INSTANCE XLXI_16

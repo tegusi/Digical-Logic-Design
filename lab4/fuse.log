@@ -1,0 +1,9 @@
+Running: D:\Shuluo\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/tegusi/lab4/test_isim_beh.exe -prj C:/Users/tegusi/lab4/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/tegusi/lab4/multi.v" into library work
+ERROR:HDLCompiler:806 - "C:/Users/tegusi/lab4/multi.v" Line 79: Syntax error near "endcase".
+ERROR:HDLCompiler:598 - "C:/Users/tegusi/lab4/multi.v" Line 21: Module <Multi> ignored due to previous errors.
+Verilog file C:/Users/tegusi/lab4/multi.v ignored due to errors

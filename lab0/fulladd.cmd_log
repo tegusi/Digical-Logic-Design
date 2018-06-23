@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab0/fulladd.v -lang verilog -prj lab0 -o fulladd.spl -module fulladd -template D:/SHULUO/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fulladd.spl C:/Users/tegusi/lab0/fulladd.sym 

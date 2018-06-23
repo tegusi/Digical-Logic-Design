@@ -1,0 +1,8 @@
+[Inputs]
+in1
+[Outputs]
+out1
+[BiDir]
+[ATTRIBUTES]
+VeriModel signal
+

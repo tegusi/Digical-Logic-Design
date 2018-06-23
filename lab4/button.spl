@@ -1,0 +1,10 @@
+[Inputs]
+mclk
+=btn[3:0]=
+[Outputs]
+sig
+rst
+[BiDir]
+[ATTRIBUTES]
+VeriModel button
+

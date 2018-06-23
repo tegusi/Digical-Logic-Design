@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="time_adv">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2018-5-19T14:9:53</timestamp>
+    <attr value="time_adv" name="VeriModel" />
+    <pin polarity="Input" x="64" y="63" name="clk" />
+    <pin polarity="Output" x="320" y="63" name="clk_out" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="63" type="pin clk" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin clk_out" />
+        <line x2="64" y1="63" y2="63" x1="64" />
+        <line x2="320" y1="63" y2="63" x1="320" />
+        <rect width="256" x="64" y="0" height="64" />
+    </graph>
+</symbol>

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/mux_2.v -lang verilog -prj lab4 -o mux_2.spl -module mux_2 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux_2.spl C:/Users/tegusi/lab4/mux_2.sym 

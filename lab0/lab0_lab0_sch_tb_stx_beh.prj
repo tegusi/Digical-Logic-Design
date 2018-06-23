@@ -1,0 +1,4 @@
+verilog isim_temp "fulladd.v"
+verilog isim_temp "lab0.vf"
+verilog isim_temp "test.v"
+verilog isim_temp "D:/Shuluo/14.7/ISE_DS/ISE//verilog/src/glbl.v"

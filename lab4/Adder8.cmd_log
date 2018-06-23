@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/adder4.v -lang verilog -prj lab4 -o Adder8.spl -module Adder8 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Adder8.spl C:/Users/tegusi/lab4/Adder8.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab4/adder4.v -lang verilog -prj lab4 -o Adder8.spl -module Adder8 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Adder8.spl C:/Users/tegusi/lab4/Adder8.sym 

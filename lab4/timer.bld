@@ -1,0 +1,127 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Shuluo\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc Basys2_Lab4.ucf -p xc3s100e-cp132-5 timer.ngc
+timer.ngd
+
+Reading NGO file "C:/Users/tegusi/lab4/timer.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Basys2_Lab4.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<7>" LOC = "N3";>
+   [Basys2_Lab4.ucf(54)]: NET "sw<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<7>" LOC = "N3";> [Basys2_Lab4.ucf(54)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<6>" LOC = "E2";>
+   [Basys2_Lab4.ucf(55)]: NET "sw<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<6>" LOC = "E2";> [Basys2_Lab4.ucf(55)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<5>" LOC = "F3";>
+   [Basys2_Lab4.ucf(56)]: NET "sw<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<5>" LOC = "F3";> [Basys2_Lab4.ucf(56)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<4>" LOC = "G3";>
+   [Basys2_Lab4.ucf(57)]: NET "sw<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<4>" LOC = "G3";> [Basys2_Lab4.ucf(57)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<3>" LOC = "B4";>
+   [Basys2_Lab4.ucf(58)]: NET "sw<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<3>" LOC = "B4";> [Basys2_Lab4.ucf(58)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<2>" LOC = "K3";>
+   [Basys2_Lab4.ucf(59)]: NET "sw<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<2>" LOC = "K3";> [Basys2_Lab4.ucf(59)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<1>" LOC = "L3";>
+   [Basys2_Lab4.ucf(60)]: NET "sw<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<1>" LOC = "L3";> [Basys2_Lab4.ucf(60)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw<0>" LOC = "P11";>
+   [Basys2_Lab4.ucf(61)]: NET "sw<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "sw<0>" LOC = "P11";> [Basys2_Lab4.ucf(61)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn<3>" LOC = "A7";>
+   [Basys2_Lab4.ucf(63)]: NET "btn<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn<3>" LOC = "A7";> [Basys2_Lab4.ucf(63)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn<2>" LOC = "M4";>
+   [Basys2_Lab4.ucf(64)]: NET "btn<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn<2>" LOC = "M4";> [Basys2_Lab4.ucf(64)]' could not be found and so
+   the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    10
+  Number of warnings:  10
+
+Total memory usage is 155756 kilobytes
+
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "timer.bld"...

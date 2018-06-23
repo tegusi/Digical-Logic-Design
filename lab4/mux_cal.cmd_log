@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/mux_cal.v -lang verilog -prj lab4 -o mux_cal.spl -module mux_cal -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w mux_cal.spl C:/Users/tegusi/lab4/mux_cal.sym 

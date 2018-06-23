@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab4/signal.v -lang verilog -prj lab4 -o signal.spl -module signal -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w signal.spl C:/Users/tegusi/lab4/signal.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab4/signal.v -lang verilog -prj lab4 -o signal.spl -module signal -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w signal.spl C:/Users/tegusi/lab4/signal.sym 

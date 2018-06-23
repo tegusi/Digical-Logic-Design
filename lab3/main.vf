@@ -1,0 +1,498 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 06/09/2018 20:54:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/tegusi/lab3/main.vf -w C:/Users/tegusi/lab3/main.sch
+//Design Name: main
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_main(D0, 
+                          D1, 
+                          E, 
+                          S0, 
+                          O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_main(D0, 
+                          D1, 
+                          D2, 
+                          D3, 
+                          E, 
+                          S0, 
+                          S1, 
+                          O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_main  I_M01 (.D0(D0), 
+                             .D1(D1), 
+                             .E(E), 
+                             .S0(S0), 
+                             .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_main  I_M23 (.D0(D2), 
+                             .D1(D3), 
+                             .E(E), 
+                             .S0(S0), 
+                             .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_main(D0, 
+                         D1, 
+                         S0, 
+                         O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module counter163_MUSER_main(A, 
+                             B, 
+                             C, 
+                             CLK, 
+                             CLR, 
+                             D, 
+                             EN, 
+                             LOAD, 
+                             QA, 
+                             QB, 
+                             QC, 
+                             QD, 
+                             RCD);
+
+    input A;
+    input B;
+    input C;
+    input CLK;
+    input CLR;
+    input D;
+    input EN;
+    input LOAD;
+   output QA;
+   output QB;
+   output QC;
+   output QD;
+   output RCD;
+   
+   wire XLXN_8;
+   wire XLXN_21;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_28;
+   wire XLXN_34;
+   wire XLXN_36;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_47;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_70;
+   wire XLXN_71;
+   wire XLXN_97;
+   wire XLXN_101;
+   wire XLXN_102;
+   wire XLXN_103;
+   wire XLXN_104;
+   wire XLXN_105;
+   wire XLXN_107;
+   wire XLXN_224;
+   wire XLXN_225;
+   wire QA_DUMMY;
+   wire QB_DUMMY;
+   wire QC_DUMMY;
+   wire QD_DUMMY;
+   
+   assign XLXN_8 = 1;
+   assign XLXN_23 = 0;
+   assign XLXN_24 = 0;
+   assign XLXN_28 = 1;
+   assign XLXN_40 = 0;
+   assign XLXN_41 = 0;
+   assign XLXN_42 = 1;
+   assign XLXN_68 = 0;
+   assign XLXN_69 = 0;
+   assign XLXN_70 = 1;
+   assign XLXN_102 = 0;
+   assign XLXN_103 = 0;
+   assign XLXN_104 = 1;
+   assign QA = QA_DUMMY;
+   assign QB = QB_DUMMY;
+   assign QC = QC_DUMMY;
+   assign QD = QD_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(XLXN_36), 
+              .Q(QA_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(XLXN_47), 
+              .Q(QB_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(CLK), 
+              .D(XLXN_97), 
+              .Q(QC_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(CLK), 
+              .D(XLXN_107), 
+              .Q(QD_DUMMY));
+   XOR2  XLXI_11 (.I0(QA_DUMMY), 
+                 .I1(XLXN_8), 
+                 .O(XLXN_21));
+   (* HU_SET = "XLXI_13_2" *) 
+   M4_1E_MXILINX_main  XLXI_13 (.D0(XLXN_21), 
+                               .D1(A), 
+                               .D2(XLXN_24), 
+                               .D3(XLXN_23), 
+                               .E(XLXN_28), 
+                               .S0(CLR), 
+                               .S1(LOAD), 
+                               .O(XLXN_34));
+   (* HU_SET = "XLXI_27_3" *) 
+   M2_1_MXILINX_main  XLXI_27 (.D0(QA_DUMMY), 
+                              .D1(XLXN_34), 
+                              .S0(EN), 
+                              .O(XLXN_36));
+   (* HU_SET = "XLXI_28_4" *) 
+   M4_1E_MXILINX_main  XLXI_28 (.D0(XLXN_39), 
+                               .D1(B), 
+                               .D2(XLXN_41), 
+                               .D3(XLXN_40), 
+                               .E(XLXN_42), 
+                               .S0(CLR), 
+                               .S1(LOAD), 
+                               .O(XLXN_43));
+   XOR2  XLXI_29 (.I0(QB_DUMMY), 
+                 .I1(QA_DUMMY), 
+                 .O(XLXN_39));
+   (* HU_SET = "XLXI_34_5" *) 
+   M2_1_MXILINX_main  XLXI_34 (.D0(QB_DUMMY), 
+                              .D1(XLXN_43), 
+                              .S0(EN), 
+                              .O(XLXN_47));
+   (* HU_SET = "XLXI_43_6" *) 
+   M4_1E_MXILINX_main  XLXI_43 (.D0(XLXN_67), 
+                               .D1(C), 
+                               .D2(XLXN_69), 
+                               .D3(XLXN_68), 
+                               .E(XLXN_70), 
+                               .S0(CLR), 
+                               .S1(LOAD), 
+                               .O(XLXN_71));
+   (* HU_SET = "XLXI_47_7" *) 
+   M2_1_MXILINX_main  XLXI_47 (.D0(QC_DUMMY), 
+                              .D1(XLXN_71), 
+                              .S0(EN), 
+                              .O(XLXN_97));
+   XOR2  XLXI_48 (.I0(QC_DUMMY), 
+                 .I1(XLXN_225), 
+                 .O(XLXN_67));
+   AND2  XLXI_49 (.I0(QB_DUMMY), 
+                 .I1(QA_DUMMY), 
+                 .O(XLXN_225));
+   (* HU_SET = "XLXI_71_9" *) 
+   M4_1E_MXILINX_main  XLXI_71 (.D0(XLXN_101), 
+                               .D1(D), 
+                               .D2(XLXN_103), 
+                               .D3(XLXN_102), 
+                               .E(XLXN_104), 
+                               .S0(CLR), 
+                               .S1(LOAD), 
+                               .O(XLXN_105));
+   (* HU_SET = "XLXI_75_8" *) 
+   M2_1_MXILINX_main  XLXI_75 (.D0(QD_DUMMY), 
+                              .D1(XLXN_105), 
+                              .S0(EN), 
+                              .O(XLXN_107));
+   XOR2  XLXI_76 (.I0(QD_DUMMY), 
+                 .I1(XLXN_224), 
+                 .O(XLXN_101));
+   AND3  XLXI_78 (.I0(QC_DUMMY), 
+                 .I1(QB_DUMMY), 
+                 .I2(QA_DUMMY), 
+                 .O(XLXN_224));
+   AND4  XLXI_108 (.I0(QD_DUMMY), 
+                  .I1(QC_DUMMY), 
+                  .I2(QB_DUMMY), 
+                  .I3(QA_DUMMY), 
+                  .O(RCD));
+endmodule
+`timescale 1ns / 1ps
+
+module main(btn, 
+            mclk, 
+            an, 
+            dp, 
+            seg);
+
+    input [1:0] btn;
+    input mclk;
+   output [3:0] an;
+   output dp;
+   output [6:0] seg;
+   
+   wire CLK;
+   wire [3:0] s1;
+   wire [3:0] s2;
+   wire [3:0] s3;
+   wire [3:0] s4;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire [3:0] XLXN_27;
+   wire XLXN_354;
+   wire XLXN_396;
+   wire XLXN_397;
+   wire XLXN_410;
+   wire XLXN_415;
+   wire XLXN_416;
+   wire XLXN_417;
+   wire XLXN_419;
+   wire XLXN_420;
+   wire XLXN_429;
+   wire XLXN_435;
+   wire XLXN_437;
+   wire XLXN_440;
+   wire XLXN_441;
+   wire XLXN_442;
+   wire XLXN_443;
+   wire XLXN_447;
+   wire XLXN_448;
+   wire XLXN_453;
+   wire XLXN_454;
+   wire XLXN_455;
+   wire XLXN_456;
+   wire XLXN_462;
+   wire XLXN_467;
+   wire XLXN_474;
+   wire XLXN_477;
+   wire XLXN_485;
+   wire XLXN_487;
+   wire XLXN_488;
+   wire XLXN_489;
+   wire XLXN_505;
+   wire XLXN_513;
+   wire XLXN_523;
+   wire XLXN_538;
+   wire XLXN_540;
+   wire XLXN_559;
+   wire XLXN_560;
+   wire [3:0] an_DUMMY;
+   
+   assign XLXN_4 = 0;
+   assign XLXN_5 = 0;
+   assign XLXN_6 = 0;
+   assign XLXN_354 = 0;
+   assign XLXN_410 = 0;
+   assign XLXN_415 = 0;
+   assign XLXN_416 = 0;
+   assign XLXN_417 = 0;
+   assign XLXN_437 = 0;
+   assign XLXN_440 = 0;
+   assign XLXN_441 = 0;
+   assign XLXN_442 = 0;
+   assign XLXN_453 = 0;
+   assign XLXN_454 = 0;
+   assign XLXN_455 = 0;
+   assign XLXN_456 = 0;
+   assign an[3:0] = an_DUMMY[3:0];
+   counter163_MUSER_main  XLXI_1 (.A(XLXN_354), 
+                                 .B(XLXN_4), 
+                                 .C(XLXN_5), 
+                                 .CLK(CLK), 
+                                 .CLR(btn[0]), 
+                                 .D(XLXN_6), 
+                                 .EN(XLXN_505), 
+                                 .LOAD(XLXN_474), 
+                                 .QA(s1[0]), 
+                                 .QB(s1[1]), 
+                                 .QC(s1[2]), 
+                                 .QD(s1[3]), 
+                                 .RCD());
+   an_gen  XLXI_6 (.btn0(btn[0]), 
+                  .mclk(mclk), 
+                  .an(an_DUMMY[3:0]));
+   counter163_MUSER_main  XLXI_22 (.A(XLXN_410), 
+                                  .B(XLXN_415), 
+                                  .C(XLXN_416), 
+                                  .CLK(CLK), 
+                                  .CLR(btn[0]), 
+                                  .D(XLXN_417), 
+                                  .EN(XLXN_513), 
+                                  .LOAD(XLXN_477), 
+                                  .QA(s2[0]), 
+                                  .QB(s2[1]), 
+                                  .QC(s2[2]), 
+                                  .QD(s2[3]), 
+                                  .RCD());
+   counter163_MUSER_main  XLXI_23 (.A(XLXN_437), 
+                                  .B(XLXN_440), 
+                                  .C(XLXN_441), 
+                                  .CLK(CLK), 
+                                  .CLR(XLXN_485), 
+                                  .D(XLXN_442), 
+                                  .EN(XLXN_540), 
+                                  .LOAD(XLXN_443), 
+                                  .QA(s3[0]), 
+                                  .QB(s3[1]), 
+                                  .QC(s3[2]), 
+                                  .QD(s3[3]), 
+                                  .RCD(XLXN_443));
+   counter163_MUSER_main  XLXI_24 (.A(XLXN_453), 
+                                  .B(XLXN_454), 
+                                  .C(XLXN_455), 
+                                  .CLK(CLK), 
+                                  .CLR(XLXN_488), 
+                                  .D(XLXN_456), 
+                                  .EN(XLXN_560), 
+                                  .LOAD(XLXN_462), 
+                                  .QA(s4[0]), 
+                                  .QB(s4[1]), 
+                                  .QC(s4[2]), 
+                                  .QD(s4[3]), 
+                                  .RCD(XLXN_462));
+   led_mux  XLXI_25 (.an(an_DUMMY[3:0]), 
+                    .s1(s1[3:0]), 
+                    .s2(s2[3:0]), 
+                    .s3(s3[3:0]), 
+                    .s4(s4[3:0]), 
+                    .code(XLXN_27[3:0]));
+   led_decoder  XLXI_26 (.dec_in(XLXN_27[3:0]), 
+                        .dec_out(seg[6:0]), 
+                        .dp(dp));
+   button  XLXI_29 (.btn(btn[1:0]), 
+                   .mclk(mclk), 
+                   .sig(XLXN_467));
+   AND4  XLXI_30 (.I0(XLXN_396), 
+                 .I1(s1[0]), 
+                 .I2(XLXN_397), 
+                 .I3(s1[3]), 
+                 .O(XLXN_474));
+   divide  XLXI_124 (.mclk(mclk), 
+                    .clk_out(CLK));
+   INV  XLXI_125 (.I(s1[2]), 
+                 .O(XLXN_397));
+   INV  XLXI_127 (.I(s1[1]), 
+                 .O(XLXN_396));
+   AND2  XLXI_129 (.I0(XLXN_474), 
+                  .I1(XLXN_467), 
+                  .O(XLXN_523));
+   AND2  XLXI_130 (.I0(XLXN_523), 
+                  .I1(XLXN_477), 
+                  .O(XLXN_538));
+   INV  XLXI_139 (.I(s2[2]), 
+                 .O(XLXN_420));
+   AND4  XLXI_140 (.I0(XLXN_419), 
+                  .I1(s2[0]), 
+                  .I2(XLXN_420), 
+                  .I3(s2[3]), 
+                  .O(XLXN_477));
+   INV  XLXI_141 (.I(s2[1]), 
+                 .O(XLXN_419));
+   INV  XLXI_145 (.I(s3[3]), 
+                 .O(XLXN_429));
+   AND4  XLXI_146 (.I0(s3[0]), 
+                  .I1(s3[2]), 
+                  .I2(XLXN_429), 
+                  .I3(XLXN_489), 
+                  .O(XLXN_435));
+   INV  XLXI_147 (.I(s3[1]), 
+                 .O(XLXN_489));
+   INV  XLXI_157 (.I(s4[2]), 
+                 .O(XLXN_448));
+   AND4  XLXI_158 (.I0(XLXN_447), 
+                  .I1(s4[0]), 
+                  .I2(XLXN_448), 
+                  .I3(s4[3]), 
+                  .O(XLXN_487));
+   INV  XLXI_159 (.I(s4[1]), 
+                 .O(XLXN_447));
+   AND2  XLXI_168 (.I0(XLXN_435), 
+                  .I1(XLXN_538), 
+                  .O(XLXN_559));
+   OR2  XLXI_171 (.I0(btn[0]), 
+                 .I1(XLXN_435), 
+                 .O(XLXN_485));
+   OR2  XLXI_172 (.I0(btn[0]), 
+                 .I1(XLXN_487), 
+                 .O(XLXN_488));
+   OR2  XLXI_175 (.I0(btn[0]), 
+                 .I1(XLXN_467), 
+                 .O(XLXN_505));
+   OR2  XLXI_182 (.I0(XLXN_523), 
+                 .I1(btn[0]), 
+                 .O(XLXN_513));
+   OR2  XLXI_194 (.I0(btn[0]), 
+                 .I1(XLXN_538), 
+                 .O(XLXN_540));
+   OR2  XLXI_201 (.I0(btn[0]), 
+                 .I1(XLXN_559), 
+                 .O(XLXN_560));
+endmodule

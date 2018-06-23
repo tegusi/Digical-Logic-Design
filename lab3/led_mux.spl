@@ -1,0 +1,12 @@
+[Inputs]
+=an[3:0]=
+=s1[3:0]=
+=s2[3:0]=
+=s3[3:0]=
+=s4[3:0]=
+[Outputs]
+=code[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel led_mux
+

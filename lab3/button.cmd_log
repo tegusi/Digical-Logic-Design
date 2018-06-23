@@ -1,0 +1,10 @@
+vhdtdtfi -lib work C:/Users/tegusi/lab3/button.v -lang verilog -prj lab3 -o button.spl -module button -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w button.spl C:/Users/tegusi/lab3/button.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab3/button.v -lang verilog -prj lab3 -o button.spl -module button -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w button.spl C:/Users/tegusi/lab3/button.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab3/button.v -lang verilog -prj lab3 -o button.spl -module button -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w button.spl C:/Users/tegusi/lab3/button.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab3/button.v -lang verilog -prj lab3 -o button.spl -module button -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w button.spl C:/Users/tegusi/lab3/button.sym 
+vhdtdtfi -lib work C:/Users/tegusi/lab3/button.v -lang verilog -prj lab3 -o button.spl -module button -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w button.spl C:/Users/tegusi/lab3/button.sym 

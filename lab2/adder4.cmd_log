@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/tegusi/Documents/lab2/lab2/adder4.xst" -ofn "C:/Users/tegusi/Documents/lab2/lab2/adder4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 adder4.ngc adder4.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o adder4_map.ncd adder4.ngd adder4.pcf 
+par -w -intstyle ise -ol high -t 1 adder4_map.ncd adder4.ncd adder4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml adder4.twx adder4.ncd -o adder4.twr adder4.pcf 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/adder4.v -lang verilog -prj lab2 -o adder4.spl -module adder4 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder4.spl C:/Users/tegusi/Documents/lab2/lab2/adder4.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/adder4.v -lang verilog -prj lab2 -o adder4.spl -module adder4 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder4.spl C:/Users/tegusi/Documents/lab2/lab2/adder4.sym 
+vhdtdtfi -lib work C:/Users/tegusi/Documents/lab2/lab2/adder4.v -lang verilog -prj lab2 -o adder4.spl -module adder4 -template D:/Shuluo/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder4.spl C:/Users/tegusi/Documents/lab2/lab2/adder4.sym 

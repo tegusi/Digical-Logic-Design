@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="CLK" />
+        <signal name="QD" />
+        <port polarity="Input" name="CLK" />
+        <port polarity="Output" name="QD" />
+        <blockdef name="fd">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <rect width="256" x="64" y="-320" height="256" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+        </blockdef>
+        <block symbolname="fd" name="XLXI_1">
+            <blockpin name="C" />
+            <blockpin name="D" />
+            <blockpin signalname="QD" name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_2">
+            <blockpin name="C" />
+            <blockpin name="D" />
+            <blockpin name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_3">
+            <blockpin name="C" />
+            <blockpin name="D" />
+            <blockpin name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_4">
+            <blockpin name="C" />
+            <blockpin name="D" />
+            <blockpin name="Q" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="2416" y="704" name="XLXI_1" orien="R0" />
+        <instance x="2416" y="1152" name="XLXI_2" orien="R0" />
+        <instance x="2416" y="1568" name="XLXI_3" orien="R0" />
+        <instance x="2416" y="2000" name="XLXI_4" orien="R0" />
+        <branch name="CLK">
+            <wire x2="2272" y1="128" y2="1888" x1="2272" />
+        </branch>
+        <iomarker fontsize="28" x="2272" y="128" name="CLK" orien="R270" />
+        <branch name="QD">
+            <wire x2="2992" y1="448" y2="448" x1="2800" />
+        </branch>
+        <iomarker fontsize="28" x="2992" y="448" name="QD" orien="R0" />
+    </sheet>
+</drawing>

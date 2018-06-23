@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/tegusi/Documents/lab2/lab2/adder_test_isim_beh.exe" -prj "C:/Users/tegusi/Documents/lab2/lab2/adder_test_beh.prj" "work.adder_test" "work.glbl" 
